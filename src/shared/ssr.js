@@ -24,7 +24,7 @@ export default class Config {
     this.server = '127.0.0.1'
     this.server_port = 8388
     this.password = '0'
-    this.method = 'aes-256-cfb'
+    this.method = 'aes-256-gcm'
     this.protocol = 'origin'
     this.protocolparam = ''
     this.obfs = 'plain'
@@ -54,7 +54,7 @@ export default class Config {
     this.protocolparam && others.push(`protoparam=${encode(this.protocolparam)}`)
     this.remarks && others.push(`remarks=${encode(this.remarks)}`)
     this.group && others.push(`group=${encode(this.group)}`)
-    const link = `ssr://${encode(required.join(':') + '/?' + others.join('&'))}`
+    var link = `ssr://${encode(required.join(':') + '/?' + others.join('&'))}`
     return link
   }
 
