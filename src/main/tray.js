@@ -10,8 +10,8 @@ let tray
 
 /**
  * 生成服务器子菜单
- * @param {*Array<Object>} configs ssr配置集合
- * @param {*Number} selectedIndex 选中的ssr配置的索引
+ * @param {Array<Object>} configs ssr配置集合
+ * @param {Number} selectedIndex 选中的ssr配置的索引
  */
 function generateConfigSubmenus (configs, selectedIndex) {
   const groups = groupConfigs(configs, selectedIndex)

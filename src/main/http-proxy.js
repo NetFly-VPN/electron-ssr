@@ -12,6 +12,7 @@ httpShutdown.extend()
 /**
  * 开启HTTP代理服务
  * @param {Object} appConfig 应用配置
+ * @param {Boolean} isProxyStarted
  */
 export function startHttpProxyServer (appConfig, isProxyStarted) {
   if (isProxyStarted && appConfig.httpProxyEnable) {

@@ -46,6 +46,7 @@ export function clearShortcuts () {
 
 /**
  * 变更快捷键绑定
+ * @param funcName 函數名字
  * @param {Boolean} shortcutEnable 是否启用快捷键
  * @param {String} oldKey 旧的快捷键
  * @param {String} newKey 新的快捷键

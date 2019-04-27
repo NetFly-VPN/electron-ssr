@@ -17,7 +17,7 @@ import { clearShortcuts } from './shortcut'
 import { loadConfigsFromString } from '../shared/ssr'
 import { isMac, isWin } from '../shared/env'
 
-const isSecondInstance = app.makeSingleInstance((argv, workingDirectory) => {
+const isSecondInstance = app.makeSingleInstance((argv) => {
   // Someone tried to run a second instance, we should focus our window.
   const _window = getWindow()
   if (_window) {
