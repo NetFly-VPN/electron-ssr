@@ -54,8 +54,7 @@ export default class Config {
     this.protocolparam && others.push(`protoparam=${encode(this.protocolparam)}`)
     this.remarks && others.push(`remarks=${encode(this.remarks)}`)
     this.group && others.push(`group=${encode(this.group)}`)
-    var link = `ssr://${encode(required.join(':') + '/?' + others.join('&'))}`
-    return link
+    return `ssr://${encode(required.join(':') + '/?' + others.join('&'))}`
   }
 
   setSSRLink (link) {
