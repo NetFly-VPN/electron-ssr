@@ -74,7 +74,7 @@ function generateMenus (appConfig) {
       { label: '查看日志', click: handler.openLog },
       { label: '项目主页', click: () => { handler.openURL('https://github.com/erguotou520/electron-ssr') } },
       { label: 'Bug反馈', click: () => { handler.openURL('https://github.com/erguotou520/electron-ssr/issues') } },
-      { label: '捐赠', click: () => { handler.openURL('https://github.com/erguotou520/donate') } },
+      // { label: '捐赠', click: () => { handler.openURL('https://github.com/erguotou520/donate') } },
       { label: '打开开发者工具', click: handler.openDevtool }
     ] },
     { label: '退出', click: handler.exitApp }
